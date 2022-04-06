@@ -1,5 +1,4 @@
 package com.blz;
-
 public class MYBinaryTreeTest {
     public static void main(String[] args) {
         MyBinaryTree<Integer> myBinaryTree = new MyBinaryTree<>();
@@ -18,8 +17,13 @@ public class MYBinaryTreeTest {
         myBinaryTree.add(67);
 
         int size = myBinaryTree.getSize();
-        System.out.println("Size is : "+size);
+        System.out.println("Size is : " + size);
 
+        Integer res = myBinaryTree.searchKey(63);
 
+        if (res == 1)
+            System.out.println("key found");
+        else
+            System.out.println("key not found");
     }
 }

@@ -19,7 +19,6 @@ public class MyLinkedList<K> {
             newNode.setNext(tempNode);
         }
     }
-
     public void append(INode<K> newNode) {
         if (this.head == null)
             this.head = newNode;
@@ -45,7 +44,6 @@ public class MyLinkedList<K> {
         }
     }
 
-
     public void insert(INode myNode, INode newNode) {
         INode tempNode = myNode.getNext();
         myNode.setNext(newNode);
@@ -62,7 +60,6 @@ public class MyLinkedList<K> {
             return tempNode;
         }
     }
-
 
     public INode popLast() {
         if (this.head == null) {
