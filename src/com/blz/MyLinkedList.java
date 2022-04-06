@@ -32,7 +32,6 @@ public class MyLinkedList<K> {
 
     }
 
-
     public void printNodes() {
         if (this.head == null)
             System.out.println("No elements to print");
@@ -45,6 +44,7 @@ public class MyLinkedList<K> {
             System.out.println(tempNode.getKey());
         }
     }
+
 
     public void insert(INode myNode, INode newNode) {
         INode tempNode = myNode.getNext();
@@ -80,7 +80,6 @@ public class MyLinkedList<K> {
         }
     }
 
-
     public INode search(K key){
         INode tempNode=this.head;
         while(tempNode!=null){
@@ -91,7 +90,6 @@ public class MyLinkedList<K> {
         }
         return tempNode;
     }
-
 
     public void deleteNode(INode myNode){
         if(this.head==null)
@@ -106,13 +104,6 @@ public class MyLinkedList<K> {
             }
         }
     }
-
-    /*
-        @purpose: Ability to create ordered linked list in asending order.
-        @param: node to delete.
-        @function : deletes the node which is having data asked by the user.
-        @return: No returns.
-    */
 
     @Override
     public String toString() {
