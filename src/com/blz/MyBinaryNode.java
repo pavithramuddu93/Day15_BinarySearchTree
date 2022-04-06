@@ -1,5 +1,4 @@
 package com.blz;
-
 public class MyBinaryNode<K extends Comparable<K>> {
     K key;
     MyBinaryNode right;
